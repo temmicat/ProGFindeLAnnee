@@ -8,7 +8,8 @@ public class CharacterMove : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private float _moveAxis;
-    [SerializeField] private float _jumpForce = 200f;
+    [SerializeField] private float _jumpForce = 1f;
+    public int direction = 1;
 
     private Rigidbody _rigidbody;
 
@@ -25,6 +26,15 @@ public class CharacterMove : MonoBehaviour
     public void HandleMove(InputAction.CallbackContext moveInput)
     {
         _moveAxis = moveInput.ReadValue<float>();
+        if (_moveAxis > 0)
+        {
+            direction = 1;
+        }
+        if (_moveAxis < 0)
+        {
+            direction = -1;
+        }
+        
     }
 
     public void HandleJump(InputAction.CallbackContext jumpInput)

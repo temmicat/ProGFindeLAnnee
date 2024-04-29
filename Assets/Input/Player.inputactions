@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "14d45de9-f495-4c7a-b622-0774636df5d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -48,7 +57,7 @@
                 {
                     "name": "negative",
                     "id": "2259a28b-9a92-4dbb-8db4-f4374e0688aa",
-                    "path": "<Keyboard>/#(Q)",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -59,7 +68,7 @@
                 {
                     "name": "positive",
                     "id": "0730c5ca-8a2e-4e12-9b8f-a92d10c04e1d",
-                    "path": "<Keyboard>/#(D)",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -86,6 +95,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dimension swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "385117e0-858b-4b1d-a8b2-a69eda86ed72",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
