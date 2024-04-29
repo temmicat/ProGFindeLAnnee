@@ -17,4 +17,9 @@ public class CharacterMove : MonoBehaviour
     {
         _moveAxis = moveInput.ReadValue<float>();
     }
+
+    public void HandleJump(InputAction.CallbackContext jumpInput)
+    {
+        
+    }
 }
