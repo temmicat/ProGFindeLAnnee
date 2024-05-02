@@ -4,10 +4,9 @@ using UnityEngine.InputSystem;
 
 public class dashanddimensionswap : MonoBehaviour
 {
-    private bool currentDimension = false; // false = etat 1  :  true = etat 2
-    public float dashDistance = 5f; // Distance to dash
-    public float dashSpeed = 10f; // Speed of dash
-    private bool isDashing = false; // Flag to check if character is dashing
+    //private bool currentDimension = false; // false = etat 1  :  true = etat 2
+    public float dashDistance = 5f; // Distance du dash
+    public float dashSpeed = 10f; // vitesse du dash
 	private CharacterMove characterMoveScript;
 	private int direction;
 
@@ -17,32 +16,6 @@ public class dashanddimensionswap : MonoBehaviour
 		direction = characterMoveScript.direction;
 	}
 
-    // Rename the coroutine to avoid conflict
-    IEnumerator PerformDash()
-    {
-        isDashing = true;
-
-        // Store current position
-        Vector3 startPosition = transform.position;
-
-        // Calculate dash end position
-		direction = characterMoveScript.direction;
-        Vector3 endPosition = transform.position + transform.right * dashDistance * direction;
-
-        // Move towards end position at dash speed
-        while (Vector3.Distance(transform.position, endPosition) > 0.1f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, endPosition, dashSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        // Ensure we end up exactly at the dash end position
-        transform.position = endPosition;
-
-        isDashing = false;
-    }
-
-    // Use this method as the input action callback for Dash
     public void HandleDash(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -50,7 +23,25 @@ public class dashanddimensionswap : MonoBehaviour
             StartCoroutine(PerformDash());
         }
     }
+    IEnumerator PerformDash()
+    {
+        Vector3 startPosition = transform.position;
 
+        
+        direction = characterMoveScript.direction;
+        Vector3 endPosition = transform.position + transform.right * dashDistance * direction;
+
+        
+        while (Vector3.Distance(transform.position, endPosition) > 0.1f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, endPosition, dashSpeed * Time.deltaTime);
+            yield return null;
+        }
+        
+        transform.position = endPosition;
+    }
+}
+/*
     public void HandleDimensionSwap(InputAction.CallbackContext dimensionSwap)
     {
         if (dimensionSwap.performed)
@@ -69,4 +60,5 @@ public class dashanddimensionswap : MonoBehaviour
             }
         }
     }
-}
+
+*/
