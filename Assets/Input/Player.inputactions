@@ -6,25 +6,7 @@
             "id": "b20ec4c7-7690-4c69-9f98-eddb8901724e",
             "actions": [
                 {
-                    "name": "Move",
-                    "type": "Button",
-                    "id": "2c296c48-5d40-4295-bde7-94d6a6159be8",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "6746db28-e27c-440c-86f0-f2be7bfa48f0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Dimension swap",
+                    "name": "Dimension swap (removed)",
                     "type": "Button",
                     "id": "c6e7394d-eeaa-40c5-a3fa-9c3bbd23837e",
                     "expectedControlType": "Button",
@@ -33,9 +15,108 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dash",
+                    "name": "Move big",
+                    "type": "Button",
+                    "id": "2c296c48-5d40-4295-bde7-94d6a6159be8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump big",
+                    "type": "Button",
+                    "id": "6746db28-e27c-440c-86f0-f2be7bfa48f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attaque big",
                     "type": "Button",
                     "id": "14d45de9-f495-4c7a-b622-0774636df5d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Monter echelle big",
+                    "type": "Button",
+                    "id": "8ebab182-e040-440b-9175-f01d2200d9a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Descendre echelle big",
+                    "type": "Button",
+                    "id": "b302e747-cf7b-419d-88dc-2d6caebb60b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pousser big",
+                    "type": "Button",
+                    "id": "69b4215b-4e10-4d12-9bdf-370ddffbe655",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move small",
+                    "type": "Button",
+                    "id": "a6f2c06a-522d-4828-a781-e67d86121a99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump small",
+                    "type": "Button",
+                    "id": "b1ad2a7a-5a2b-4d50-8752-186ec4caa023",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Monter echelle/lianes small",
+                    "type": "Button",
+                    "id": "756b063b-e081-4081-a779-c635512c36e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Descendre echelle/lianes small",
+                    "type": "Button",
+                    "id": "5f2acd17-147b-4cc3-b996-1efe77c4b476",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Activation small",
+                    "type": "Button",
+                    "id": "4fe46701-f02f-4d46-b9e4-d14cdc10354f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Dash small",
+                    "type": "Button",
+                    "id": "174976a1-9c0f-462b-a45c-5fca9529be92",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -44,68 +125,189 @@
             ],
             "bindings": [
                 {
-                    "name": "Clavier",
-                    "id": "b7d147cd-41b3-4cc0-adf9-ddc3bb068cae",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "2259a28b-9a92-4dbb-8db4-f4374e0688aa",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "0730c5ca-8a2e-4e12-9b8f-a92d10c04e1d",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "042292c3-eacc-4c46-9491-0e41ab117194",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "",
                     "id": "8f18c33a-93cf-4192-8877-9fd321159d4a",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dimension swap",
+                    "action": "Dimension swap (removed)",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "385117e0-858b-4b1d-a8b2-a69eda86ed72",
-                    "path": "<Keyboard>/q",
+                    "id": "1b46f8ff-330f-4bfb-858f-82659277937e",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash",
+                    "action": "Monter echelle big",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1f53afd-6516-41e3-97f8-04b99a82b425",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pousser big",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "5d097204-6d8c-4844-86aa-0b4b16d4e38f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move small",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "94b3dcef-df0c-42c1-a90a-22865b7ba512",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move small",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ac7bff9c-b1ea-458b-92e1-4bd546d4d898",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move small",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "858ddf51-4f6b-4d03-95bc-77ea7e2cc75c",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Monter echelle/lianes small",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "344e3e35-96c8-4617-becb-16df893f268a",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activation small",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "134e3b96-25bb-4caa-bbce-001e2d60a709",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move big",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b67b3fb2-3179-4755-b08f-08552cfcf48a",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move big",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "39e44b47-ff39-4fe9-827b-c5264ddf7794",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move big",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6e00028b-2eba-4a8c-8d89-798bcc1a7d29",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump big",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ccdbe050-df9d-47ab-9287-5ecb24ce53ae",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attaque big",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0db0f3d1-ad07-49e1-ad22-b1f337bed3de",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Descendre echelle big",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e9ff04d-f0cb-4d43-b0d2-6834d7598c5e",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump small",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c66a8b76-2c7f-48c6-9a0b-dd750f10ebc6",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Descendre echelle/lianes small",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f07f9bb-3e2b-41c0-a49a-41acb6087b1a",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash small",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

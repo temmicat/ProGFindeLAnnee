@@ -2,21 +2,21 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class dashanddimensionswap : MonoBehaviour
+public class DashSmall : MonoBehaviour
 {
     //private bool currentDimension = false; // false = etat 1  :  true = etat 2
     public float dashDistance = 5f; // Distance du dash
     public float dashSpeed = 10f; // vitesse du dash
-	private CharacterMove characterMoveScript;
+	private SmallMove SmallMoveScript;
 	private int direction;
 
 	void Start()
 	{
-		characterMoveScript = GetComponent<CharacterMove>();
-		direction = characterMoveScript.direction;
+		SmallMoveScript = GetComponent<SmallMove>();
+		direction = SmallMoveScript.direction;
 	}
 
-    public void HandleDash(InputAction.CallbackContext context)
+    public void HandleSmallDash(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -28,7 +28,7 @@ public class dashanddimensionswap : MonoBehaviour
         Vector3 startPosition = transform.position;
 
         
-        direction = characterMoveScript.direction;
+        direction = SmallMoveScript.direction;
         Vector3 endPosition = transform.position + transform.right * dashDistance * direction;
 
         
