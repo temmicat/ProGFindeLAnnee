@@ -137,8 +137,13 @@
                 },
                 {
                     "name": "",
+<<<<<<< Updated upstream
                     "id": "1b46f8ff-330f-4bfb-858f-82659277937e",
                     "path": "<Gamepad>/rightShoulder",
+=======
+                    "id": "385117e0-858b-4b1d-a8b2-a69eda86ed72",
+                    "path": "<Keyboard>/#(A)",
+>>>>>>> Stashed changes
                     "interactions": "",
                     "processors": "",
                     "groups": "",
