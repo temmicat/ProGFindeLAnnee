@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ab1b782717d0875449ec71bf44c172ab, type: 2}
+  - {fileID: 2100000, guid: 722b3e81378c2de4e881d1545bd6782c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpForce: 500
+  MaxJump: 2
 --- !u!114 &6278708760158146035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,5 +274,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _moveAxis: 0
   direction: 1
