@@ -2,36 +2,9 @@
     "name": "players",
     "maps": [
         {
-            "name": "player",
+            "name": "BigRobot",
             "id": "7c9eb8d4-7469-4167-8a50-1e1a0091e0dd",
             "actions": [
-                {
-                    "name": "small jump",
-                    "type": "Button",
-                    "id": "4ae6a51c-6510-434a-800c-39514fb801fa",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "small move",
-                    "type": "Button",
-                    "id": "c5a4da7a-bbe9-4771-ba69-907d528a7b44",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "small dash",
-                    "type": "Button",
-                    "id": "4c5bc2c2-9fc0-4e81-97d8-74a11db3b5f0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
                 {
                     "name": "big jump",
                     "type": "Button",
@@ -52,61 +25,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "ead11c11-005d-4096-8cc8-88504632c747",
-                    "path": "<Gamepad>/dpad/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "small jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "375af244-2e3a-49f7-b1e8-34e97a9c6115",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "small move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "cb8a2153-ee7e-4f44-a2e7-17d6d1ed34f5",
-                    "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "small move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "61b085b8-f5c2-4361-9029-21f140dcbadf",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "small move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "e0d61fdd-b567-4f44-914e-964a82ccd835",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "small dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "094ff991-25db-43f4-a0b6-0f73f5d801a7",
@@ -148,6 +66,96 @@
                     "processors": "",
                     "groups": "",
                     "action": "big move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "SmallRobot",
+            "id": "7c58c8f4-4519-4b59-9044-403b989a3f0c",
+            "actions": [
+                {
+                    "name": "small move",
+                    "type": "Button",
+                    "id": "72747b13-d544-4397-b472-19862b4e7768",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "small jump",
+                    "type": "Button",
+                    "id": "925e5403-47c7-4f63-925f-46f1179c3e31",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "small dash",
+                    "type": "Button",
+                    "id": "64c0165d-4992-4d44-af10-b909e6112b96",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b693c3b8-ed92-43dc-b55e-9c4f8c9c6508",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "small jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ee02c24-74c9-4692-a9e7-4cc0bf3e90ec",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "small dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "cbd4f5b8-8743-48e8-9231-c453e4abe329",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "small move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "90cda31a-f86d-4a6d-a8e7-cac2437259e7",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "small move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "730a11ea-ac03-4308-8b49-86f7dccc619c",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "small move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
