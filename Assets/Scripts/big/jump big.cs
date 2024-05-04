@@ -8,6 +8,7 @@ public class BigJump : MonoBehaviour
 {
     [SerializeField] private float _jumpForce = 1f;
     [SerializeField] private int MaxJump = 2;
+    [SerializeField] private echelle codeEchelle;
     private int CurrentJumpCount = 0;
     private Rigidbody _rigidbody;
 
@@ -18,7 +19,7 @@ public class BigJump : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Plateforme"))
         {
             CurrentJumpCount = 0;
         }
@@ -30,9 +31,11 @@ public class BigJump : MonoBehaviour
         {
             if (CurrentJumpCount < MaxJump)
             {
-                Debug.Log("Big Jumping");
-                _rigidbody.AddForce(transform.up * _jumpForce);
-                CurrentJumpCount += 1;
+                if (codeEchelle.usingLadder == false)
+                {
+                    _rigidbody.AddForce(transform.up * _jumpForce);
+                    CurrentJumpCount += 1;
+                }
             }
         }
     }

@@ -7,12 +7,17 @@ using UnityEngine.InputSystem;
 public class BigMove : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
+    [SerializeField] private echelle codeEchelle;
+    
     private float _moveAxis;
     public int direction = 1;
     
     void FixedUpdate()
     {
-        transform.Translate(new Vector3(1, 0, 0) * (_moveAxis * _moveSpeed * Time.deltaTime));
+        if (codeEchelle.usingLadder == false)
+        {
+            transform.Translate(new Vector3(1, 0, 0) * (_moveAxis * _moveSpeed * Time.deltaTime));
+        }
     }
 
     public void HandleBigMove(InputAction.CallbackContext moveInput)
