@@ -7,17 +7,13 @@ using UnityEngine.InputSystem;
 public class SmallMove : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
-    [SerializeField] private echelle codeEchelle;
     
     private float _moveAxis;
     public int direction = 1;
     
     void FixedUpdate()
     {
-        if (codeEchelle.usingLadder == false)
-        {
-            transform.Translate(new Vector3(1, 0, 0) * (_moveAxis * _moveSpeed * Time.deltaTime));
-        }
+        transform.Translate(new Vector3(1, 0, 0) * (_moveAxis * _moveSpeed * Time.deltaTime));
     }
 
     public void HandleSmallMove(InputAction.CallbackContext moveInput)

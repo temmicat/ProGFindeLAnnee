@@ -7,6 +7,8 @@ TagManager:
   - Floor
   - Echelle
   - Plateforme
+  - player big
+  - player small
   layers:
   - Default
   - TransparentFX

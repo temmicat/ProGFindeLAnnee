@@ -8,7 +8,6 @@ public class SmallJump : MonoBehaviour
 {
     [SerializeField] private float _jumpForce = 1f;
     [SerializeField] private int MaxJump = 2;
-    [SerializeField] private echelle codeEchelle;
     private int CurrentJumpCount = 0;
     private Rigidbody _rigidbody;
 
@@ -31,11 +30,8 @@ public class SmallJump : MonoBehaviour
         {
             if (CurrentJumpCount < MaxJump)
             {
-                if (codeEchelle.usingLadder == false)
-                {
-                    _rigidbody.AddForce(transform.up * _jumpForce);
-                    CurrentJumpCount += 1;
-                }
+                _rigidbody.AddForce(transform.up * _jumpForce);
+                CurrentJumpCount += 1;
                 
             }
         }

@@ -10,11 +10,13 @@ public class echelle : MonoBehaviour
     public float climbSpeed = 10f;
     private bool canClimb = false;
     private bool canGoDown = false;
+
     
     private Vector3 playerPosition;
     private Vector3 ladderPosition;
 
     public bool usingLadder = false;
+	private int direction;
     
     [SerializeField] private Collider playerCollider;
     
@@ -23,15 +25,15 @@ public class echelle : MonoBehaviour
     {
         if (other.CompareTag("Echelle"))
         {
-            playerPosition = transform.position;
-            ladderPosition = other.gameObject.transform.position;
-            if (playerPosition.y < ladderPosition.y)
+            if (transform.position.y <= other.gameObject.transform.position.y)
             {
                 canClimb = true;
+				canGoDown = false;
             }
-            if (playerPosition.y > ladderPosition.y)
+            if (transform.position.y > other.gameObject.transform.position.y)
             {
                 canGoDown = true;
+				canClimb = false;
             }
         }
     }
@@ -66,41 +68,44 @@ public class echelle : MonoBehaviour
     }
     IEnumerator ClimbingEchelle()
     {
-        Vector3 startPosition = transform.position;
+        if(usingLadder == false)
+		{
+        	Vector3 startPosition = transform.position;
+        	Vector3 endPosition = transform.position + transform.up * (tailleEchelle + offset);
 
-        
-        Vector3 endPosition = transform.position + transform.up * (tailleEchelle + offset);
+        	playerCollider.isTrigger = true;
 
-        playerCollider.isTrigger = true;
-        usingLadder = true;
-        while (Vector3.Distance(transform.position, endPosition) > 0.1f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, endPosition, climbSpeed * Time.deltaTime);
-            yield return null;
+        	while (Vector3.Distance(transform.position, endPosition) > 0.2f)
+        	{
+				usingLadder = true;
+            	transform.position = Vector3.MoveTowards(transform.position, endPosition, climbSpeed * Time.deltaTime);
+            	yield return null;
+        	}
+			transform.position = endPosition;
+        	playerCollider.isTrigger = false;
+	        usingLadder = false;
         }
-        
-        transform.position = endPosition;
-        playerCollider.isTrigger = false;
-        usingLadder = false;
+
     }
     
     IEnumerator GoingDownEchelle()
     {
-        Vector3 startPosition = transform.position;
+        if(usingLadder == false)
+		{
+        	Vector3 startPosition = transform.position;
+        	Vector3 endPosition = transform.position + transform.up * (tailleEchelle - offset) * -1;
 
-        
-        Vector3 endPosition = transform.position + transform.up * (tailleEchelle - offset) * -1;
-
-        playerCollider.isTrigger = true;
-        usingLadder = true;
-        while (Vector3.Distance(transform.position, endPosition) > 0.1f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, endPosition, climbSpeed * Time.deltaTime);
-            yield return null;
+        	playerCollider.isTrigger = true;
+        	while (Vector3.Distance(transform.position, endPosition) > 0.2f)
+        	{
+				usingLadder = true;
+            	transform.position = Vector3.MoveTowards(transform.position, endPosition, climbSpeed * Time.deltaTime);
+            	yield return null;
+        	}
+			transform.position = endPosition;
+        	playerCollider.isTrigger = false;
+			usingLadder = false;
         }
         
-        transform.position = endPosition;
-        playerCollider.isTrigger = false;
-        usingLadder = false;
     }
 }
