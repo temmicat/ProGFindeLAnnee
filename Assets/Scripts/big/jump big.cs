@@ -7,9 +7,10 @@ using UnityEngine.InputSystem;
 public class BigJump : MonoBehaviour
 {
     [SerializeField] private float _jumpForce = 1f;
-    [SerializeField] private int MaxJump = 2;
+    [SerializeField] private int MaxJump = 1;
     private int CurrentJumpCount = 0;
     private Rigidbody _rigidbody;
+    [SerializeField] public bigpush target;
 
     private void Start()
     {
@@ -30,8 +31,11 @@ public class BigJump : MonoBehaviour
         {
             if (CurrentJumpCount < MaxJump)
             {
-                _rigidbody.AddForce(transform.up * _jumpForce);
-                CurrentJumpCount += 1;
+                if (target.isPushing == false)
+                {
+                    _rigidbody.AddForce(transform.up * _jumpForce);
+                    CurrentJumpCount += 1;
+                }
             }
         }
     }
