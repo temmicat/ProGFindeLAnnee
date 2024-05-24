@@ -121,7 +121,7 @@ using UnityEngine.InputSystem;
 
 public class echelle : MonoBehaviour
 {
-    public float tailleEchelle = 4f;
+    public float tailleEchelle;
     public float offset = 0.6f;
     public float climbSpeed = 10f;
     private bool canClimb = false;
@@ -129,14 +129,27 @@ public class echelle : MonoBehaviour
     private bool isClimbing = false;
     private bool isGoingDown = false;
     private Vector3 targetPosition;
+    private Rigidbody rb;
 
     [SerializeField] private Collider playerCollider;
     [SerializeField] public bigpush target;
+
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        
+        if (rb == null)
+        {
+            Debug.LogError("Rigidbody component not found!");
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Echelle"))
         {
+            tailleEchelle = other.gameObject.transform.localScale.y; //other.gameObject.GetComponent<Renderer>().bounds.size.y * 
             if (transform.position.y <= other.gameObject.transform.position.y)
             {
                 canClimb = true;
@@ -189,10 +202,11 @@ public class echelle : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (isClimbing || isGoingDown)
         {
+            rb.useGravity = false;
             float step = climbSpeed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
 
@@ -201,6 +215,7 @@ public class echelle : MonoBehaviour
                 isClimbing = false;
                 isGoingDown = false;
                 playerCollider.isTrigger = false;
+                rb.useGravity = true;
             }
         }
     }

@@ -22,18 +22,13 @@ public class ennemyAI : MonoBehaviour
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, currentMovePoint, step);
-        Debug.Log("moving ennemy");
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == movePointOne)
+        if (this.transform.position == movePointTwo.transform.position)
         {
-            currentMovePoint = movePointTwo.transform.position ;
+            currentMovePoint = movePointOne.transform.position;
         }
-        if (other.gameObject == movePointTwo)
+        else if (this.transform.position == movePointOne.transform.position)
         {
-            currentMovePoint = movePointOne.transform.position ;
+            currentMovePoint = movePointTwo.transform.position;
         }
     }
 }

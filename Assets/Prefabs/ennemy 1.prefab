@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5648437311387117400}
   - component: {fileID: 227120311739900897}
   - component: {fileID: 756889276942980262}
-  - component: {fileID: 3623748388295592246}
   - component: {fileID: 3923170025486753765}
   - component: {fileID: 2857650589888276640}
+  - component: {fileID: 6879595741423392674}
   m_Layer: 0
   m_Name: ennemy 1
-  m_TagString: Untagged
+  m_TagString: lethal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,27 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3623748388295592246
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7207965195179736137}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3923170025486753765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,3 +112,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5965f7f4b49df924081919414d20a025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6879595741423392674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207965195179736137}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
