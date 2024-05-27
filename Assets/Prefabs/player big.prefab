@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &580374683780991871
+--- !u!1 &8241215706989552677
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5867762128814564228}
-  - component: {fileID: 2678555491400396142}
-  - component: {fileID: 184613566894163353}
-  - component: {fileID: 6861734225311726776}
-  - component: {fileID: 4549315625052945669}
-  - component: {fileID: 4284488961910969960}
-  - component: {fileID: 1627121657966311236}
-  - component: {fileID: 8795353512734587924}
+  - component: {fileID: 1452287287167096284}
+  - component: {fileID: 5818835101639621571}
+  - component: {fileID: 3404395425575661652}
+  - component: {fileID: 7335867763182239748}
+  - component: {fileID: 6227357260902808230}
+  - component: {fileID: 5022442255075988364}
+  - component: {fileID: 4669808719599023740}
+  - component: {fileID: 3724688863501213184}
+  - component: {fileID: 5501388312960212772}
+  - component: {fileID: 5798874672940404251}
   m_Layer: 0
   m_Name: player big
-  m_TagString: Untagged
+  m_TagString: player big
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5867762128814564228
+--- !u!4 &1452287287167096284
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 1.37, z: 0}
+  m_LocalPosition: {x: -14.99, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2678555491400396142
+--- !u!33 &5818835101639621571
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &184613566894163353
+--- !u!23 &3404395425575661652
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -90,13 +92,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6861734225311726776
+--- !u!65 &7335867763182239748
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -106,20 +108,20 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4549315625052945669
+--- !u!54 &6227357260902808230
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   serializedVersion: 4
-  m_Mass: 0.25
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -133,24 +135,24 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &4284488961910969960
+--- !u!114 &5022442255075988364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 98b33e60db59b9445b733287ff070af8, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: e9db7b6604f8fb54c83b73d0ba5e1289, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -165,9 +167,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CharacterMove, Assembly-CSharp
-        m_MethodName: HandleMove
+      - m_Target: {fileID: 3724688863501213184}
+        m_TargetAssemblyTypeName: BigJump, Assembly-CSharp
+        m_MethodName: HandleBigJump
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -177,13 +179,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 2c296c48-5d40-4295-bde7-94d6a6159be8
-    m_ActionName: 'Player/Move[/Keyboard/a,/Keyboard/d]'
+    m_ActionId: 5434ef2a-acaa-454f-a257-7c26522de082
+    m_ActionName: 'player/big jump[/XInputControllerWindows/buttonNorth,/DualShock4GamepadHID/buttonNorth,/XInputControllerWindows1/buttonNorth]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CharacterMove, Assembly-CSharp
-        m_MethodName: HandleJump
+      - m_Target: {fileID: 4669808719599023740}
+        m_TargetAssemblyTypeName: BigMove, Assembly-CSharp
+        m_MethodName: HandleBigMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -193,13 +195,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 6746db28-e27c-440c-86f0-f2be7bfa48f0
-    m_ActionName: 'Player/Jump[/Keyboard/space]'
+    m_ActionId: 5fb64284-e16d-4401-a9eb-28c02319692d
+    m_ActionName: 'player/big move[/XInputControllerWindows/buttonWest,/DualShock4GamepadHID/buttonWest,/XInputControllerWindows1/buttonWest,/XInputControllerWindows/buttonEast,/DualShock4GamepadHID/buttonEast,/XInputControllerWindows1/buttonEast]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3c0039b3-6bcd-4a2d-8091-99acf8dc7f99
+    m_ActionName: 'player/small jump[/XInputControllerWindows/dpad/up,/DualShock4GamepadHID/dpad/up]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2db88a00-397e-45d5-8d70-e5d6a22aa21f
+    m_ActionName: 'player/small move[/XInputControllerWindows/dpad/left,/DualShock4GamepadHID/dpad/left,/XInputControllerWindows/dpad/right,/DualShock4GamepadHID/dpad/right]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1be26690-dffd-4262-a54d-feda942eee73
+    m_ActionName: 'player/small dash[/XInputControllerWindows/leftTrigger,/DualShock4GamepadHID/leftTrigger]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: dashanddimensionswap, Assembly-CSharp
-        m_MethodName: HandleDimensionSwap
+      - m_Target: {fileID: 5501388312960212772}
+        m_TargetAssemblyTypeName: echelle, Assembly-CSharp
+        m_MethodName: HandleClimbEchelle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -209,13 +223,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: c6e7394d-eeaa-40c5-a3fa-9c3bbd23837e
-    m_ActionName: 'Player/Dimension swap[/Keyboard/e]'
+    m_ActionId: e9e3c0dd-9621-4321-b21b-0da51dc5481b
+    m_ActionName: 'player/big climb[/XInputControllerWindows/rightShoulder,/DualShock4GamepadHID/rightShoulder]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dab3b449-36ec-4411-8f9c-98b84b757ed7
+    m_ActionName: 'player/small climb[/XInputControllerWindows/leftShoulder,/DualShock4GamepadHID/leftShoulder]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: dashanddimensionswap, Assembly-CSharp
-        m_MethodName: HandleDash
+      - m_Target: {fileID: 5501388312960212772}
+        m_TargetAssemblyTypeName: echelle, Assembly-CSharp
+        m_MethodName: HandleGoDownEchelle
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -225,56 +243,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 14d45de9-f495-4c7a-b622-0774636df5d8
-    m_ActionName: 'Player/Dash[/Keyboard/a]'
+    m_ActionId: b44da792-7792-4ffa-9af7-414bc4e5904c
+    m_ActionName: 'player/big go down[/XInputControllerWindows/buttonSouth,/DualShock4GamepadHID/buttonSouth]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 8ebab182-e040-440b-9175-f01d2200d9a2
-    m_ActionName: Player/Monter echelle big
+    m_ActionId: ec9008ca-604d-4a0f-a109-886f3d34ae27
+    m_ActionName: 'player/small go down[/XInputControllerWindows/dpad/down,/DualShock4GamepadHID/dpad/down]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: b302e747-cf7b-419d-88dc-2d6caebb60b0
-    m_ActionName: Player/Descendre echelle big
+    m_ActionId: fb80b83f-4b5d-41eb-9bae-1d69ccba295f
+    m_ActionName: 'player/small activate[/DualShock4GamepadHID/leftShoulder,/XInputControllerWindows/leftShoulder]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 69b4215b-4e10-4d12-9bdf-370ddffbe655
-    m_ActionName: Player/Pousser big
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a6f2c06a-522d-4828-a781-e67d86121a99
-    m_ActionName: Player/Move small
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b1ad2a7a-5a2b-4d50-8752-186ec4caa023
-    m_ActionName: Player/Jump small
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 756b063b-e081-4081-a779-c635512c36e7
-    m_ActionName: Player/Monter echelle/lianes small
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5f2acd17-147b-4cc3-b996-1efe77c4b476
-    m_ActionName: Player/Descendre echelle/lianes small
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4fe46701-f02f-4d46-b9e4-d14cdc10354f
-    m_ActionName: Player/Activation small
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 174976a1-9c0f-462b-a45c-5fca9529be92
-    m_ActionName: Player/Dash small
+      m_Calls:
+      - m_Target: {fileID: 5798874672940404251}
+        m_TargetAssemblyTypeName: bigpush, Assembly-CSharp
+        m_MethodName: HandlePush
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4f0af3b7-298f-4eee-aa7e-f1a2c5b1b8e4
+    m_ActionName: 'player/big push[/DualShock4GamepadHID/rightShoulder,/XInputControllerWindows/rightShoulder]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1627121657966311236
+--- !u!114 &4669808719599023740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e591ccba595b5f4cb49f615f1055955, type: 3}
@@ -282,16 +288,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   direction: 1
---- !u!114 &8795353512734587924
+--- !u!114 &3724688863501213184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580374683780991871}
+  m_GameObject: {fileID: 8241215706989552677}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b56fdafefc1db374b8f495bb79344547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpForce: 250
+  MaxJump: 2
+  target: {fileID: 5798874672940404251}
+--- !u!114 &5501388312960212772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241215706989552677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e52ca2d7aaaaf4ea2479b7e1e703c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailleEchelle: 4
+  offset: 0.6
+  climbSpeed: 10
+  playerCollider: {fileID: 7335867763182239748}
+  target: {fileID: 0}
+--- !u!114 &5798874672940404251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241215706989552677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9ac2d30debda34c82c05e6e9ecd810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPushing: 0

@@ -9,6 +9,9 @@ TagManager:
   - Plateforme
   - player big
   - player small
+  - block
+  - cable
+  - lethal
   layers:
   - Default
   - TransparentFX

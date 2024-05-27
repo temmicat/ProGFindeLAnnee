@@ -41,6 +41,33 @@ public class DashSmall : MonoBehaviour
         transform.position = endPosition;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     public void HandleDimensionSwap(InputAction.CallbackContext dimensionSwap)
     {
